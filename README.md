@@ -23,3 +23,10 @@ terraform-bundle package terraform-bundle.hcl
 terraform
 terraform-provider-aws_v2.27.0_x4
 ```
+- For Terraform Enterprise you should create the bundle with specified OS and architecture 
+```
+$ terraform-bundle package -os=linux -arch=amd64 terraform-bundle.hcl
+...
+Creating terraform_0.12.8-bundle2019090908_linux_amd64.zip ...
+All done!
+```
