@@ -5,7 +5,7 @@
 ### Building
 - clone a terraform repo into the following folder
 ```
-git clone https://github.com/hashicorp/terraform.git $GOPATH/src/github.com/hashicorp/
+go get -v github.com/hashicorp/terraform
 cd $GOPATH/src/github.com/hashicorp/terraform
 go install ./tools/terraform-bundle
 ```
@@ -23,7 +23,7 @@ terraform-bundle package terraform-bundle.hcl
 terraform
 terraform-provider-aws_v2.27.0_x4
 ```
-- For Terraform Enterprise you should create the bundle with specified OS and architecture 
+- For on-premises Terraform Enterprise you should create the bundle with specified OS and architecture 
 ```
 $ terraform-bundle package -os=linux -arch=amd64 terraform-bundle.hcl
 ...
